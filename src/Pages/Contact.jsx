@@ -8,13 +8,13 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    console.log(formRef.current);
     emailjs
       .sendForm(
-        'service_rkjkxkq', // ✅ Replace with your actual service ID
-        'template_kwwyw1r', // ✅ Replace with your actual template ID
+        'service_nhe7ig2', // ✅ Replace with your actual service ID
+        'template_9gauuz3', // ✅ Replace with your actual template ID
         formRef.current,
-        'Af4bBjml7BCNxrsLT' // ✅ Replace with your public key (EmailJS user/public key)
+        'R-GjJ9md5bSQP3o9Q' // ✅ Replace with your public key (EmailJS user/public key)
       )
       .then(() => {
         setSuccess(true);
